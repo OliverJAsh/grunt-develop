@@ -1,0 +1,30 @@
+{
+  "name": "grunt-develop",
+  "description": "Grunt Task to run a Node.js Server while developing, auto-reloading on change.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/edwardhotchkiss/grunt-develop",
+  "author": { "name": "Edward Hotchkiss", "email": "edwardhotchkiss@me.com" },
+  "contributors": [
+    { "name": "Edward Hotchkiss","email": "edwardhotchkiss@me.com" }
+  ],
+  "repository":{
+    "type":"git",
+    "url":"git://github.com/edwardhotchkiss/node-develop.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": ">=0.4.0",
+    "grunt-contrib-jshint": ">=0.2.0",
+    "grunt-contrib-nodeunit": ">=0.1.2"
+  },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
+  "keywords": [
+    "grunt","node","server","development","gruntplugin","express"
+  ]
+}
