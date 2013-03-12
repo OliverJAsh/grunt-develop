@@ -33,6 +33,9 @@ module.exports = function(grunt) {
 
   // starts server
   grunt.event.on('develop.start', function(filename) {
+    if (child && !child.killed) {
+      return grunt.event.emit('develop.kill');
+    }
     child = grunt.util.spawn({
       cmd: process.argv[0],
       args: [filename]
